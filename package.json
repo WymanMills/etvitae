@@ -1,0 +1,42 @@
+{
+  "name": "etvitae",
+  "author": "SoniaBoyer",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@tpluscode/eslint-config": "^0.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "c8": "^8.0.1",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "wsrun": "^5.2.4"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --quiet"
+    ]
+  },
+  "mocha": {
+    "extension": "ts",
+    "loader": "ts-node/esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WymanMills/etvitae.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WymanMills/etvitae.git/issues"
+  },
+  "homepage": "https://github.com/WymanMills/etvitae.git",
+  "version": "1.5.0",
+  "dependencies": {
+    "assumendanulla": "^1.0.1"
+  }
+}
